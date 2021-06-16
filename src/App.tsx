@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.scss';
 
 import Button from './components/Button';
 
 const App = () => {
-  const [toggle, setToggle] = useState(false);
+  const num: number = 10;
+  const [toggle, setToggle] = useState<boolean>(false);
 
   const toggleText = () => {
     setToggle(!toggle);
